@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Seçim Yap</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #3897f0;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<h1>Hoşgeldin!</h1>
+<button onclick="openInstagram()">Instagram Profilim</button>
+<button onclick="sendSMS()">SMS Gönder</button>
+
+<script>
+  function openInstagram() {
+    window.location.href = "intent://instagram.com/_u/noskillsemih/#Intent;package=com.instagram.android;scheme=https;end";
+  }
+  function sendSMS() {
+    window.location.href = "sms:+905xxxxxxxxx?body=Merhaba,%20nas%C4%B1ls%C4%B1n?";
+  }
+</script>
+</body>
+</html>
